@@ -1,0 +1,1 @@
+Children = new Meteor.Collection('children');

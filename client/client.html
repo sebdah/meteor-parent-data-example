@@ -1,0 +1,24 @@
+<head>
+  <title>Parent test</title>
+</head>
+
+<body>
+  <h1>Parent data test</h1>
+  {{> parents}}
+</body>
+
+<template name="parents">
+  {{#each parents}}
+    <p>
+      Parent: {{name}}<br>
+      {{> children}}
+    </p>
+    <hr>
+  {{/each}}
+</template>
+
+<template name="children">
+  {{#each children}}
+    Child: {{name}}<br>
+  {{/each}}
+</template>
